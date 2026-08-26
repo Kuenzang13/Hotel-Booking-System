@@ -2,30 +2,30 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
+  const navItems = [
+    { path: '/', label: 'Home' },
+    { path: '/dashboard', label: 'Dashboard' },
+    { path: '/profile', label: 'Profile' }
+  ];
+
   return (
-    <nav className="navbar">
-      <div className="nav-logo">AppLogo</div>
-      <ul className="nav-links">
-        <li>
-          <NavLink to="/" end className={({ isActive }) => (isActive ? 'active' : '')}>
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/dashboard" className={({ isActive }) => (isActive ? 'active' : '')}>
-            Dashboard
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/profile" className={({ isActive }) => (isActive ? 'active' : '')}>
-            Profile
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/login" className={({ isActive }) => (isActive ? 'active' : '')}>
-            Login
-          </NavLink>
-        </li>
+    <nav className="bg-gray-800 text-white px-6 py-4 flex justify-between items-center shadow-md">
+      <div className="text-xl font-bold tracking-wide">
+        <NavLink to="/">AAD App</NavLink>
+      </div>
+      <ul className="flex space-x-6">
+        {navItems.map((item) => (
+          <li key={item.path}>
+            <NavLink
+              to={item.path}
+              className={({ isActive }) =>
+                isActive ? 'text-blue-400 font-semibold underline' : 'hover:text-gray-300'
+              }
+            >
+              {item.label}
+            </NavLink>
+          </li>
+        ))}
       </ul>
     </nav>
   );
