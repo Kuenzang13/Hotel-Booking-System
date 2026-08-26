@@ -1,15 +1,18 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 
-export default function MainLayout({ children }) {
+const MainLayout = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+    <div className="layout-container">
       <Navbar />
-      <main style={{ flex: 1, padding: '2rem' }}>
-        {children}
+      <main className="main-content">
+        <Outlet />
       </main>
       <Footer />
     </div>
   );
-}
+};
+
+export default MainLayout;
