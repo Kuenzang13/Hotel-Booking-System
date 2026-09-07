@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default function Navbar() {
   return (
@@ -6,9 +7,9 @@ export default function Navbar() {
       <div className="logo">Hotel Booking System</div>
       <nav>
         <ul className="nav-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/dashboard">Dashboard</a></li>
-          <li><a href="/profile">Profile</a></li>
+          <li><NavLink to="/" end>Home</NavLink></li>
+          <li><NavLink to="/dashboard">Dashboard</NavLink></li>
+          <li><NavLink to="/profile">Profile</NavLink></li>
         </ul>
       </nav>
     </header>
