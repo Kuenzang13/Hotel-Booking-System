@@ -9,7 +9,6 @@ export default function Navbar() {
           <li><a href="/">Home</a></li>
           <li><a href="/dashboard">Dashboard</a></li>
           <li><a href="/profile">Profile</a></li>
-          <li><a href="/login">Login</a></li>
         </ul>
       </nav>
     </header>

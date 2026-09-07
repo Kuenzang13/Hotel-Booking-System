@@ -1,5 +1,3 @@
-/* --- Media Queries --- */
-/* Tablet Breakpoint */
 @media (max-width: 768px) {
   header.navbar {
     flex-direction: column;
@@ -17,7 +15,6 @@
   }
 }
 
-/* Mobile Breakpoint */
 @media (max-width: 480px) {
   .nav-links {
     flex-direction: column;

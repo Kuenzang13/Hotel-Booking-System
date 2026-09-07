@@ -1,8 +1,7 @@
 import React from 'react';
-import MainLayout from './layouts/MainLayout.jsx';
-import Card from './components/ui/Card.jsx';
+import Card from '../../components/ui/Card.jsx';
 
-export default function App() {
+export default function Home() {
   const rooms = [
     { id: 1, title: 'Deluxe Ocean View', description: 'King bed, balcony, sea view, free Wi-Fi, and breakfast included.', buttonText: 'Book $180/night' },
     { id: 2, title: 'Executive Suite', description: 'Spacious suite with living area, mini bar, and luxury spa access.', buttonText: 'Book $250/night' },
@@ -11,7 +10,7 @@ export default function App() {
   ];
 
   return (
-    <MainLayout>
+    <div>
       <section style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
         <h1>Find Your Perfect Stay</h1>
         <p>Book luxury hotels, resort suites, and cozy rooms at best rates.</p>
@@ -36,6 +35,6 @@ export default function App() {
           ))}
         </div>
       </section>
-    </MainLayout>
+    </div>
   );
 }
