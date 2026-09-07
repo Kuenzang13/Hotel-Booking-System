@@ -4,12 +4,12 @@ import PageTitle from '../components/ui/PageTitle.jsx';
 import WelcomeBanner from '../components/ui/WelcomeBanner.jsx';
 
 export default function Home() {
-  const rooms = [
-    { id: 1, title: 'Deluxe Ocean View', description: 'King bed, balcony, sea view, free Wi-Fi, and breakfast included.', buttonText: 'Book $180/night' },
-    { id: 2, title: 'Executive Suite', description: 'Spacious suite with living area, mini bar, and luxury spa access.', buttonText: 'Book $250/night' },
-    { id: 3, title: 'Standard Double Room', description: 'Cozy room with two queen beds, modern amenities, and city view.', buttonText: 'Book $110/night' },
-    { id: 4, title: 'Presidential Penthouse', description: 'Top floor luxury suite with private terrace and dedicated concierge.', buttonText: 'Book $500/night' },
-  ];
+ const rooms = [
+  { id: 1, title: 'Deluxe Ocean View', description: 'King bed, balcony, sea view, free Wi-Fi, and breakfast included.', buttonText: 'Book ₹480/night' },
+  { id: 2, title: 'Executive Suite', description: 'Spacious suite with living area, mini bar, and luxury spa access.', buttonText: 'Book ₹550/night' },
+  { id: 3, title: 'Standard Double Room', description: 'Cozy room with two queen beds, modern amenities, and city view.', buttonText: 'Book ₹610/night' },
+  { id: 4, title: 'Presidential Penthouse', description: 'Top floor luxury suite with private terrace and dedicated concierge.', buttonText: 'Book ₹1200/night' },
+];
 
   // Exercise 5: input event updates state as the user types
   const [searchTerm, setSearchTerm] = useState('');
