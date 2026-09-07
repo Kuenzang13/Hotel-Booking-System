@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Card = ({ title, description, children, className = '' }) => {
+export default function Card({ title, description, buttonText }) {
   return (
-    <div className={`border rounded-lg p-6 shadow-sm bg-white ${className}`}>
-      {title && <h3 className="text-xl font-bold mb-2 text-gray-800">{title}</h3>}
-      {description && <p className="text-gray-600 mb-4">{description}</p>}
-      {children && <div>{children}</div>}
+    <div className="card">
+      <h3>{title}</h3>
+      <p style={{ margin: '0.75rem 0 1.25rem', color: 'var(--text-muted)' }}>
+        {description}
+      </p>
+      {buttonText && <button>{buttonText}</button>}
     </div>
   );
-};
-
-export default Card;
+}
