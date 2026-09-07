@@ -3,7 +3,7 @@ import React from 'react';
 export default function Navbar() {
   return (
     <header className="navbar">
-      <div className="logo">AAD App</div>
+      <div className="logo">Hotel Booking System</div>
       <nav>
         <ul className="nav-links">
           <li><a href="/">Home</a></li>
